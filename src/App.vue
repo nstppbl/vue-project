@@ -6,6 +6,8 @@
 
 <style lang="scss">
 
-@import './assets/styles/reset-style.scss';
+body {
+  background-color: $test-color;
+}
 
 </style>
