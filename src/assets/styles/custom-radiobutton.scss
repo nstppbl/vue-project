@@ -1,9 +1,8 @@
 /* The container */
-.container {
+.status-container {
     display: block;
     position: relative;
     padding-left: 35px;
-    cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -11,10 +10,9 @@
 }
 
 /* Hide the browser's default radio button */
-.container input {
+.status-container input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
 }
 
 // /* Create a custom radio button */
@@ -41,7 +39,7 @@
     border-radius: 10px;
 }
 
-.container input:checked ~ .checkmark-radio-all {
+.status-container input:checked ~ .checkmark-radio-all {
 	border: 1.5px solid;
 }
 
@@ -54,7 +52,7 @@
     border-radius: 10px;
 }
 
-.container input:checked ~ .checkmark-radio-active {
+.status-container input:checked ~ .checkmark-radio-active {
 	  border: 1.5px solid;
 }
 
@@ -68,8 +66,14 @@
     border-radius: 10px;
 }
 
-.container input:checked ~ .checkmark-radio-completed {
+.status-container input:checked ~ .checkmark-radio-completed {
 	  border: 1.5px solid;
 }
 
+
+.checkmark-radio-all:hover,
+.checkmark-radio-active:hover,
+.checkmark-radio-completed:hover {
+    cursor: pointer;
+}
 
