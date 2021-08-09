@@ -116,7 +116,6 @@ body {
     font-family: 'Comfortaa';
 }
 
-
 .todo-form {
     width: $width-1;
     max-width: 540px;
@@ -125,7 +124,6 @@ body {
     text-align: center;
     color: $text-color-dark;
 }
-
 
 .todo-header {
     display: flex;
@@ -154,8 +152,6 @@ body {
 .todo-task--active {
   border-radius: 10px 10px 0 0;
 }
-
-
 
 .todo-subtask {
     display: flex;
@@ -257,6 +253,5 @@ body {
   }
 
 }
-
 
 </style>

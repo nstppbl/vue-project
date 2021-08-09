@@ -56,7 +56,6 @@
 	  border: 1.5px solid;
 }
 
-
 .checkmark-radio-completed {
     position: absolute;
     top: -9px;
@@ -70,7 +69,6 @@
 	  border: 1.5px solid;
 }
 
-
 .checkmark-radio-all:hover,
 .checkmark-radio-active:hover,
 .checkmark-radio-completed:hover {
@@ -80,7 +78,6 @@
 
 @media (max-width: 400px) {
 
-  
     .checkmark-radio-all {
       left: 46px;
     }
