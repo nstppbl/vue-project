@@ -1,13 +1,3 @@
-// module.exports = {
-//     css: {
-//         loaderOptions: {
-//             sass: {
-//                 additionalData: `@import "@/assets/styles/variables.scss";`,
-//             },
-//         },
-//     }, 
-// };
-
 module.exports = {
     css: {
         loaderOptions: {
@@ -17,5 +7,7 @@ module.exports = {
                 `
             }
         }
-    }
+    }, devServer: {
+        host: 'localhost'
+        }
 }

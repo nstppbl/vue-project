@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
 
-$background-gradient: linear-gradient(131deg, rgba(255,126,95,1) 0%, rgba(254,181,103,1) 100%);
-$base-color: #FFDFBE;
+$gradient: linear-gradient(131deg, rgba(255,126,95,1) 0%, rgba(254,181,103,1) 100%);
+$base-color-pale: #FFECD8;
+$base-color-light: #FFDFBE;
+$base-color-dark: #FFCA93;
 $text-color-dark: #7F4B13;
 $text-color-light: rgba(127, 75, 19, 0.42);
 
