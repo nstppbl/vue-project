@@ -77,3 +77,22 @@
     cursor: pointer;
 }
 
+
+@media (max-width: 400px) {
+
+  
+    .checkmark-radio-all {
+      left: 46px;
+    }
+  
+     .checkmark-radio-active {
+      left: 38px;
+    }
+  
+    .checkmark-radio-completed {
+      left: 21px;
+    }
+  
+  }
+  
+

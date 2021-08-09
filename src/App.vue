@@ -78,7 +78,7 @@
                 <img src="@/assets/icons/close-icon.svg" alt="close-icon">
               </a>
             </div>
-            <button class="todo-button">Add a new task</button>
+            <button class="todo-button">Add a new subtask</button>
         </div>
         <div class="todo-footer">
           <div class="task-qty">1/3 left</div>
@@ -116,8 +116,10 @@ body {
     font-family: 'Comfortaa';
 }
 
+
 .todo-form {
-    width: 540px;
+    width: $width-1;
+    max-width: 540px;
     background-color: #FFF4E9;
     margin: 0 auto;
     text-align: center;
@@ -138,7 +140,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 480px;
+    width: $width-2;
     height: 50px;
     background-color: $base-color-light;
     color: $text-color-dark;
@@ -159,7 +161,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 480px;
+    width: $width-2;
     height: 50px;
     background-color: $base-color-pale;
     color: $text-color-dark;
@@ -171,7 +173,7 @@ body {
 }
 
 .todo-button {
-    width: 480px;
+    width: $width-2;
     height: 50px;
     background-color: $base-color-pale;
     margin-bottom: 30px;
@@ -210,7 +212,7 @@ body {
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 480px;
+    width: $width-2;
     height: 50px;
     background-color: $base-color-pale;
     color: $text-color-dark;
@@ -230,6 +232,30 @@ body {
 
 .add-subtask-input::placeholder {
     color: $text-color-light;
+}
+
+@media (max-width: 600px) {
+  .todo-form {
+    width: $width-3;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+
+  .task-status {
+    display: block;
+  }
+
+  .todo-footer {
+    height: 120px;
+  }
+
+  .status-container {
+    margin: 15px 15px;
+  }
+
 }
 
 
