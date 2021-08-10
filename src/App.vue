@@ -104,7 +104,9 @@
 
 
 
-<style lang="scss">body {
+<style lang="scss">
+
+body {
   background: url('./assets/icons/bg-icon.png') no-repeat right, $gradient;
   display: flex;
   flex-direction: column;
