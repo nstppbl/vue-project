@@ -7,7 +7,8 @@ module.exports = {
                 `
             }
         }
-    }, devServer: {
+    },
+    devServer: {
         host: 'localhost'
-        }
+    }
 }
