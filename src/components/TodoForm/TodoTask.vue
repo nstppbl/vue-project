@@ -6,9 +6,7 @@
       <span class="checkmark"></span>
       <span class="checkmark-border"></span>
     </label>
-    <a href="#" class="close-button todo-task__close-button">
-      <img src="@/assets/icons/close-icon.svg" alt="close-icon">
-    </a>
+      <img class="close-button todo-task__close-button" src="@/assets/icons/close-icon.svg" alt="close-icon">
   </div>
 </template>
 
@@ -55,6 +53,10 @@ export default {
 
   .todo-task--active {
     border-radius: 10px 10px 0 0;
+  }
+
+  .close-button {
+    cursor: pointer;
   }
 
 
