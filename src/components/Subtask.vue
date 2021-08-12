@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 
-  .todo-subtask {
+.todo-subtask {
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -8,11 +8,8 @@
 
 <script>
 
-
 import TaskQty from './TaskQty.vue'
 import TaskStatus from './TaskStatus.vue'
-
-
 
 export default {
   components: {
