@@ -18,8 +18,8 @@ import AddTask from './AddTask.vue'
 import AddSubtask from './AddSubtask.vue'
 import TodoTask from './TodoTask.vue'
 import TodoSubtask from './TodoSubtask.vue'
-import TodoHeader from './TodoHeader.vue'
-import TodoFooter from './TodoFooter.vue'
+import TodoHeader from './TodoHeader/TodoHeader.vue'
+import TodoFooter from './TodoFooter/TodoFooter.vue'
 
 export default {
   name: 'TodoForm',

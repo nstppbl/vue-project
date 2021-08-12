@@ -8,8 +8,8 @@
 
 <script>
 
-import TaskQty from './TaskQty.vue'
-import TaskStatus from './TaskStatus.vue'
+import TaskQty from '../TodoFooter/TaskQty.vue'
+import TaskStatus from '../TodoFooter/TaskStatus.vue'
 
 
 export default {
