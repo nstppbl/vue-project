@@ -8,31 +8,16 @@
 
 <script>
 
-import TaskQty from '../TodoFooter/TaskQty.vue'
-import TaskStatus from '../TodoFooter/TaskStatus.vue'
+
+import TaskQty from './TaskQty.vue'
+import TaskStatus from './TaskStatus.vue'
+
 
 
 export default {
-  name: 'TodoFooter',
   components: {
     TaskQty,
     TaskStatus,
-  },
-  props: [
-  ],
-  data () {
-    return {
-    }
-  },
-  mounted () {
-  },
-  created () {
-  },
-  computed: {
-  },
-  methods: {
-  },
-  watch: {
   }
 }
 </script>
@@ -48,6 +33,18 @@ export default {
   padding-right: 30px;
   background-color: $base-color-dark;
   color: $text-color-light;
+}
+
+@media (max-width: 400px) {
+
+  .todo-footer {
+    height: 120px;
+  }
+
+  .add-subtask-input {
+    letter-spacing: -.5px;
+  }
+
 }
 
 

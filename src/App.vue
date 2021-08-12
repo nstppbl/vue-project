@@ -1,39 +1,25 @@
 <template>
   <div id="app">
-    <TodoForm></TodoForm>
-    <br>
-    <TodoForm></TodoForm>
+    <Header></Header>
+    <Content></Content>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 
-import todoForm from './components/TodoForm/TodoForm.vue'
+import Header from './components/Header.vue'
+import Content from './components/Content.vue'
+import Footer from './components/Footer.vue'
 
   export default {
   components: {
-     todoForm,
-  },
-  props: [
-  ],
-  data () {
-    return {
-    }
-  },
-  mounted () {
-  },
-  created () {
-  },
-  computed: {
-  },
-  methods: {
-  },
-  watch: {
+     Header,
+     Content,
+     Footer,
   }
 }
 </script>
-
-
 
 
 <style lang="scss">
@@ -46,14 +32,6 @@ body {
   justify-content: center;
   overflow: hidden;
   font-family: 'Comfortaa';
-}
-
-#app {
-  display: flex;
-}
-
-.todo-form {
-  margin-left: 20px;
 }
 
 </style>

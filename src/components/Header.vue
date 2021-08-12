@@ -7,25 +7,6 @@
 
 <script>
 export default {
-  name: 'TodoHeader',
-  components: {
-  },
-  props: [
-  ],
-  data () {
-    return {
-    }
-  },
-  mounted () {
-  },
-  created () {
-  },
-  computed: {
-  },
-  methods: {
-  },
-  watch: {
-  }
 }
 </script>
 

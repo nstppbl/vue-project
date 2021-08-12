@@ -17,24 +17,6 @@
 
 <script>
 export default {
-  components: {
-  },
-  props: [
-  ],
-  data () {
-    return {
-    }
-  },
-  mounted () {
-  },
-  created () {
-  },
-  computed: {
-  },
-  methods: {
-  },
-  watch: {
-  }
 }
 </script>
 
@@ -47,15 +29,14 @@ export default {
 
 @media (max-width: 400px) {
 
-
 .task-status {
   display: block;
+  text-align: center;
 }
 
 .status-container {
   margin: 15px 15px;
 }
-
 
 }
 

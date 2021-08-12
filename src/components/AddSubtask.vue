@@ -7,25 +7,6 @@
 
 <script>
 export default {
-  name: 'AddSubtask',
-  components: {
-  },
-  props: [
-  ],
-  data () {
-    return {
-    }
-  },
-  mounted () {
-  },
-  created () {
-  },
-  computed: {
-  },
-  methods: {
-  },
-  watch: {
-  }
 }
 </script>
 
