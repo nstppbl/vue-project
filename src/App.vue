@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <TodoForm></TodoForm>
+    <br>
+    <TodoForm></TodoForm>
   </div>
 </template>
 
@@ -44,6 +46,14 @@ body {
   justify-content: center;
   overflow: hidden;
   font-family: 'Comfortaa';
+}
+
+#app {
+  display: flex;
+}
+
+.todo-form {
+  margin-left: 20px;
 }
 
 </style>
