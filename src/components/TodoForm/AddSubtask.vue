@@ -1,14 +1,13 @@
 <template>
   <div class="add-subtask">
-    <a href="#" class="add-button todo-subtask__add-button">
-      <img src="@/assets/icons/add-icon.png" alt="add-icon">
-    </a>
+      <img class="add-button todo-subtask__add-button" src="@/assets/icons/add-icon.png" alt="add-icon">
     <input class="add-subtask-input" type="text" name="subtask" placeholder="Add a new subtask">
   </div>
 </template>
 
 <script>
 export default {
+  name: 'AddSubtask',
   components: {
   },
   props: [
@@ -54,6 +53,10 @@ export default {
   margin-left: 10px;
   background-color: $base-color-pale;
   color: $text-color-dark;
+}
+
+.add-button {
+  cursor: pointer;
 }
 
 .add-subtask-input::placeholder {

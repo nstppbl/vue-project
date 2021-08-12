@@ -1,7 +1,7 @@
 <template>
   <div class="todo-task">
     <label class="checkbox-container">
-      <span class="checkbox-label">Task 1</span>
+      <span class="checkbox-label">{{ title }}</span>
       <input type="checkbox" checked="checked">
       <span class="checkmark"></span>
       <span class="checkmark-border"></span>
@@ -20,6 +20,7 @@ export default {
   ],
   data () {
     return {
+      title: 'Task 1',
     }
   },
   mounted () {
