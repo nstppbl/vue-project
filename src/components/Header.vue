@@ -21,4 +21,6 @@ export default {
   color: $text-color-dark;
 }
 
+
+
 </style>

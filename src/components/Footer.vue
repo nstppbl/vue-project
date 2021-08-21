@@ -1,11 +1,13 @@
 <template>
   <div class="todo-footer">
     <TaskQty/>
+    <div class="task-status-wrap">
     <TaskStatus
     v-for="status in statuses"
     :key="status.id"
     :task_status="status"
     />
+    </div>
   </div>
 </template>
 
@@ -57,6 +59,11 @@ export default {
   color: $text-color-light;
 }
 
+.task-status-wrap {
+  display: flex;
+}
+
+
 @media (max-width: 400px) {
 
   .todo-footer {
@@ -66,6 +73,11 @@ export default {
   .add-subtask-input {
     letter-spacing: -.5px;
   }
+
+  .task-status-wrap {
+    display: block;
+    justify-content: center;
+}
 
 }
 

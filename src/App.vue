@@ -34,4 +34,10 @@ body {
   font-family: 'Comfortaa';
 }
 
+@media (max-width: 400px) {
+  #app {
+    width: $width-2;
+  }
+}
+
 </style>
