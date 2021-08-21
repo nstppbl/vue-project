@@ -1,7 +1,11 @@
 <template>
   <div class="todo-footer">
-    <TaskQty></TaskQty>
-    <TaskStatus></TaskStatus>
+    <TaskQty/>
+    <TaskStatus
+    v-for="status in statuses"
+    :key="status.id"
+    :task_status="status"
+    />
   </div>
 </template>
 
@@ -15,6 +19,27 @@ export default {
   components: {
     TaskQty,
     TaskStatus,
+  },
+   data() {
+    return {
+      statuses : [
+        {
+        id: 1,
+        status: "All",
+        class: "checkmark-radio-all"
+        },
+        {
+        id:2,
+        status: "Active",
+        class: "checkmark-radio-active"
+        },
+        {
+        id:3,
+        status: "Completed",
+        class: "checkmark-radio-completed"
+        }
+      ]
+    }
   }
 }
 </script>

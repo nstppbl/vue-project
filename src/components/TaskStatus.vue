@@ -1,22 +1,31 @@
 <template>
   <div class="task-status">
-    <label class="status-container">All
+    <label class="status-container" > {{ task_status.status }}
       <input type="radio" checked="checked" name="radio">
-      <span class="checkmark-radio checkmark-radio-all"></span>
-    </label>
-    <label class="status-container">Active
-      <input type="radio" name="radio">
-      <span class="checkmark-radio checkmark-radio-active"></span>
-    </label>
-    <label class="status-container">Completed
-      <input type="radio" name="radio">
-      <span class="checkmark-radio checkmark-radio-completed"></span>
+      <Checkmark v-bind:class="[task_status.class]"/>
     </label>
   </div>
 </template>
 
 <script>
+
+import Checkmark from './Checkmark.vue'
+
 export default {
+  components: {
+    Checkmark,
+  },
+props: {
+  task_status: {
+    type: Object,
+    default() {
+      return {}
+    }
+  }
+},
+data() {
+  return {}
+}
 }
 </script>
 
