@@ -1,24 +1,38 @@
 <template>
-  <div class="todo-subtask todo-subtask--active">
-    <label class="checkbox-container">
-      <span class="checkbox-label">{{ subtask_data.title }}</span>
-      <input type="checkbox" checked="checked">
-      <span class="checkmark"></span>
-      <span class="checkmark-border"></span>
-    </label>
-      <img class="close-button todo-task__close-button" src="@/assets/icons/close-icon.svg" alt="close-icon">
-  </div>
-  
+<div class="subtask">
+    <Subtask
+      v-for="subtask in subtasks"
+      :key="subtask.title"
+      :subtask_data="subtask"
+  />
+  <AddSubtask/>
+</div>
 </template>
 
 <script>
+
+import Subtask from './Subtask.vue'
+import AddSubtask from './AddSubtask.vue'
+
 export default {
-  props: {
-    subtask_data : {
-      type: Object,
-      default() {
-        return {}
-      }
+  components: {
+    Subtask,
+    AddSubtask
+  },
+    data() {
+    return{
+      subtasks: [
+        {
+          title: 'Subtask 1',
+          isActive: true,
+          activeClass: 'todo-subtask--active'
+        },
+        {
+          title: 'Subtask 2',
+          isActive: true,
+          activeClass: 'todo-subtask--active'
+        },
+      ]
     }
   }
 }

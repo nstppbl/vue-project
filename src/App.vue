@@ -30,8 +30,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   font-family: 'Comfortaa';
+}
+
+#app {
+  overflow: auto;
 }
 
 @media (max-width: 400px) {

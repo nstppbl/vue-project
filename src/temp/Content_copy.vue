@@ -1,6 +1,10 @@
 <template>
   <div class="content">
-    <TaskList/>
+    <Task class="todo-task--active"></Task>
+    <Subtask/>
+    <AddSubtask/>
+    <Task/>
+    <Task/>
     <AddTask/>
   </div>
 </template>
@@ -8,14 +12,18 @@
 
 <script>
 
-import TaskList from './TaskList.vue'
 import AddTask from './AddTask.vue'
+import AddSubtask from './AddSubtask.vue'
+import Task from './Task.vue'
+import Subtask from './Subtask.vue'
 
 
 export default {
   components: {
-    TaskList,
     AddTask,
+    AddSubtask,
+    Task,
+    Subtask,
   }
 }
 </script>
