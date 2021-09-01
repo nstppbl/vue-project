@@ -1,21 +1,19 @@
 <template>
-  <div class="todo-subtask todo-subtask--active">
-    <label class="checkbox-container">
-      <span class="checkbox-label">{{ subtask_data.title }}</span>
+  <div :class="[$style.todoSubtask, $style.todoSubtaskActive]">
+    <label class="checkboxContainer">
+      <span class="checkboxLabel">{{ subtask_data.title }}</span>
       <input type="checkbox" checked="checked">
       <span class="checkmark"></span>
-      <span class="checkmark-border"></span>
+      <span class="checkmarkBorder"></span>
     </label>
-      <img class="close-button todo-task__close-button" src="@/assets/icons/close-icon.svg" alt="close-icon">
+      <img :class="[$style.closeButton, $style.todoTaskCloseButton]" src="@/assets/icons/close-icon.svg" alt="close-icon">
   </div>
-  
 </template>
 
 <script>
 export default {
   props: {
     subtask_data : {
-      type: Object,
       default() {
         return {}
       }
@@ -24,9 +22,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-.todo-subtask {
+<style  module lang="scss">
+.todoSubtask {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,12 +37,10 @@ export default {
   border: 1px solid $base-color-light;
   border-top: 0;
   }
-
-.close-button {
+.closeButton {
   cursor: pointer;
 }
-
-.add-subtask {
+.addSubtask {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -60,20 +55,16 @@ export default {
   border: 1px solid $base-color-light;
   border-top: 0;
 }
-
-.add-subtask-input {
+.addSubtaskInput {
   width: 80%;
   margin-left: 10px;
   background-color: $base-color-pale;
   color: $text-color-dark;
 }
-
-.add-button {
+.addButton {
   cursor: pointer;
 }
-
-.add-subtask-input::placeholder {
+.addSubtaskInput::placeholder {
   color: $text-color-light;
 }
-
 </style>

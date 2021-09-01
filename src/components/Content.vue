@@ -1,16 +1,13 @@
 <template>
-  <div class="content">
+  <div :class="$style.content">
     <TaskList/>
     <AddTask/>
   </div>
 </template>
 
-
 <script>
-
 import TaskList from './TaskList.vue'
 import AddTask from './AddTask.vue'
-
 
 export default {
   components: {
@@ -20,9 +17,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-
+<style  module lang="scss">
 .content {
   width: $width-1;
   max-width: 540px;
@@ -32,7 +27,6 @@ export default {
   text-align: center;
   color: $text-color-dark;
 }
-
 @media (max-width: 600px) {
   .content {
     width: $width-3;

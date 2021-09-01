@@ -1,15 +1,10 @@
 <template>
   <div>
-      <Task
-      v-for="task in tasks"
-      :key="task.title"
-      :task_data="task"
-      />
+    <Task v-for="task in tasks" :key="task.id" :taskData="task"/>
   </div>
 </template>
 
 <script>
-
 import Task from './Task.vue'
 
 export default {
@@ -20,28 +15,22 @@ export default {
     return {
       tasks: [
         {
-          title: 'Task 1',
+          id: 1,
+          title: "Task 1",
           isActive: true,
-          activeClass: 'todo-task--active'
         },
         {
-          title: 'Task 2',
+          id: 2,
+          title: "Task 2",
           isActive: true,
-          activeClass: 'todo-task--active'
         },
         {
-          title: 'Task 3',
+          id: 3,
+          title: "Task 3",
           isActive: true,
-          activeClass: 'todo-task--active'
         }
       ]
     }
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-
-
-</style>

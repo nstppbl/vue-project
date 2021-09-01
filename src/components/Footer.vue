@@ -1,19 +1,13 @@
 <template>
-  <div class="todo-footer">
+  <div :class="$style.todoFooter">
     <TaskQty/>
-    <div class="task-status-wrap">
-    <TaskStatus
-    v-for="status in statuses"
-    :key="status.id"
-    :task_status="status"
-    />
+    <div :class="$style.taskStatusWrap">
+      <TaskStatus v-for="status in statuses" :key="status.id" :taskStatusData="status" />
     </div>
   </div>
 </template>
 
-
 <script>
-
 import TaskQty from './TaskQty.vue'
 import TaskStatus from './TaskStatus.vue'
 
@@ -28,17 +22,17 @@ export default {
         {
         id: 1,
         status: "All",
-        class: "checkmark-radio-all"
+        class: "checkmarkRadioAll",
         },
         {
-        id:2,
+        id: 2,
         status: "Active",
-        class: "checkmark-radio-active"
+        class: "checkmarkRadioActive",
         },
         {
-        id:3,
+        id: 3,
         status: "Completed",
-        class: "checkmark-radio-completed"
+        class: "checkmarkRadioCompleted",
         }
       ]
     }
@@ -46,9 +40,8 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-
-.todo-footer {
+<style  module lang="scss">
+.todoFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,28 +51,19 @@ export default {
   background-color: $base-color-dark;
   color: $text-color-light;
 }
-
-.task-status-wrap {
+.taskStatusWrap {
   display: flex;
 }
-
-
 @media (max-width: 400px) {
-
-  .todo-footer {
+  .todoFooter {
     height: 120px;
   }
-
-  .add-subtask-input {
+  .addSubtaskInput {
     letter-spacing: -.5px;
   }
-
-  .task-status-wrap {
+  .taskStatusWrap {
     display: block;
     justify-content: center;
+  } 
 }
-
-}
-
-
 </style>

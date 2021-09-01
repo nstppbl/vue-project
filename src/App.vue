@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <Content></Content>
-    <Footer></Footer>
+    <Header/>
+    <Content/>
+    <Footer/>
   </div>
 </template>
 
@@ -23,7 +23,6 @@ export default {
 
 
 <style lang="scss">
-
 body {
   background: url('./assets/icons/bg-icon.png') no-repeat right, $gradient;
   display: flex;
@@ -32,15 +31,12 @@ body {
   justify-content: center;
   font-family: 'Comfortaa';
 }
-
 #app {
   overflow: auto;
 }
-
 @media (max-width: 400px) {
   #app {
     width: $width-2;
   }
 }
-
 </style>

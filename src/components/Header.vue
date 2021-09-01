@@ -1,18 +1,11 @@
 <template>
-  <div class="todo-header">
+  <div :class="$style.todoHeader">
     to-do list
   </div>
 </template>
 
-
-<script>
-export default {
-}
-</script>
-
-<style scoped lang="scss">
-
-.todo-header {
+<style  module lang="scss">
+.todoHeader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +13,4 @@ export default {
   background-color: $base-color-dark;
   color: $text-color-dark;
 }
-
-
-
 </style>

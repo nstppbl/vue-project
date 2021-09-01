@@ -1,11 +1,11 @@
 /* Start checkbox-styling */
 
-.checkbox-label {
+.checkboxLabel {
   position: relative;
   top: 7px;
 }
 
-.checkbox-container {
+.checkboxContainer {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -44,7 +44,7 @@
 
 /* On mouse-over, add a background color */
 
-.checkbox-container {
+.checkboxContainer {
   &:hover input~.checkmark {
     background-color: #FEB567;
 
@@ -68,7 +68,7 @@
 
 /* Show the checkmark when checked */
 
-.checkbox-container {
+.checkboxContainer {
   input:checked~.checkmark:after {
     display: block;
   }
@@ -88,7 +88,7 @@
 
 /* Style the checkmark/indicator */
 
-.checkmark-border {
+.checkmarkBorder {
   position: absolute;
   top: 0;
   left: 0;

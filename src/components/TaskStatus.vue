@@ -1,53 +1,41 @@
 <template>
-  <div class="task-status">
-    <label class="status-container" > {{ task_status.status }}
+  <div :class="$style.taskStatus">
+    <label :class="$style.statusContainer"> {{ taskStatusData.status }}
       <input type="radio" checked="checked" name="radio">
-      <Checkmark v-bind:class="[task_status.class]"/>
+        <span class="checkmarkRadio"></span>
     </label>
   </div>
 </template>
 
 <script>
 
-import Checkmark from './Checkmark.vue'
-
 export default {
   components: {
-    Checkmark,
   },
-props: {
-  task_status: {
-    type: Object,
-    default() {
-      return {}
+  props: {
+    taskStatusData: {
+
+      default () {
+        return {}
+      }
     }
   }
-},
-data() {
-  return {}
-}
 }
 </script>
 
-<style lang="scss" scoped>
-
-.task-status {
+<style  module lang="scss">
+.taskStatus {
   display: flex;
   justify-content: center;
-}
-
+  }
 @media (max-width: 400px) {
-
-.task-status {
-  display: block;
-  text-align: center;
+  .taskStatus {
+    display: block;
+    text-align: center;
+  }
+  .statusContainer {
+    margin: 15px 15px;
+  }
 }
-
-.status-container {
-  margin: 15px 15px;
-}
-
-}
-
 
 </style>

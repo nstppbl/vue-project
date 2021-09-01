@@ -1,5 +1,5 @@
 /* The container */
-.status-container {
+.statusContainer {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -10,7 +10,7 @@
 }
 
 /* Hide the browser's default radio button */
-.status-container input {
+.statusContainer input {
   position: absolute;
   opacity: 0;
 }
@@ -30,7 +30,7 @@
 // 	border: 1.5px solid;
 // }
 
-.checkmark-radio-all {
+.checkmarkRadioAll {
   position: absolute;
   top: -9px;
   left: 19px;
@@ -41,11 +41,11 @@
 
 
 
-.status-container input:checked~.checkmark-radio-all {
+.statusContainer input:checked~.checkmarkRadioAll {
   border: 1.5px solid;
 }
 
-.checkmark-radio-active {
+.checkmarkRadioActive {
   position: absolute;
   top: -9px;
   left: 19px;
@@ -54,11 +54,11 @@
   border-radius: 10px;
 }
 
-.status-container input:checked~.checkmark-radio-active {
+.statusContainer input:checked~.checkmarkRadioActive {
   border: 1.5px solid;
 }
 
-.checkmark-radio-completed {
+.checkmarkRadioCompleted {
   position: absolute;
   top: -9px;
   left: 19px;
@@ -67,26 +67,26 @@
   border-radius: 10px;
 }
 
-.status-container input:checked~.checkmark-radio-completed {
+.statusContainer input:checked~.checkmarkRadioCompleted {
   border: 1.5px solid;
 }
 
-.checkmark-radio-all:hover,
-.checkmark-radio-active:hover,
-.checkmark-radio-completed:hover {
+.checkmarkRadioAll:hover,
+.checkmarkRadioActive:hover,
+.checkmarkRadioCompleted:hover {
   cursor: pointer;
 }
 
 @media (max-width: 400px) {
-  .checkmark-radio-all {
+  .checkmarkRadioAll {
     left: 49px;
   }
 
-  .checkmark-radio-active {
+  .checkmarkRadioActive {
     left: 38px;
   }
 
-  .checkmark-radio-completed {
+  .checkmarkRadioCompleted {
     left: 21px;
   }
 }

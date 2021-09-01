@@ -1,19 +1,12 @@
 <template>
-  <div class="add-subtask">
-      <img class="add-button todo-subtask__add-button" src="@/assets/icons/add-icon.png" alt="add-icon">
-    <input class="add-subtask-input" type="text" name="subtask" placeholder="Add a new subtask">
+  <div :class="$style.addSubtask">
+      <img :class="$style.addButton" src="@/assets/icons/add-icon.png" alt="add-icon">
+    <input :class="$style.addSubtaskInput" type="text" name="subtask" placeholder="Add a new subtask">
   </div>
 </template>
 
-<script>
-export default {
-}
-</script>
-
-
-<style lang="scss" scoped>
-  
-.add-subtask {
+<style  module lang="scss">
+.addSubtask {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -21,27 +14,23 @@ export default {
   height: 50px;
   background-color: $base-color-pale;
   color: $text-color-dark;
-  margin: 0px auto;
   padding-left: 20px;
+  margin: 0px auto;
   padding-right: 20px;
   border-radius: 0 0 10px 10px;
   border: 1px solid $base-color-light;
   border-top: 0;
 }
-
-.add-subtask-input {
+.addSubtaskInput {
   width: 80%;
   margin-left: 10px;
   background-color: $base-color-pale;
   color: $text-color-dark;
 }
-
-.add-button {
+.addButton {
   cursor: pointer;
 }
-
-.add-subtask-input::placeholder {
+.addSubtaskInput::placeholder {
   color: $text-color-light;
 }
-
 </style>

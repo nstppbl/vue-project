@@ -1,15 +1,3 @@
 <template>
-  <span class="checkmark-radio"></span>
+  <span class="checkmarkRadio"></span>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style lang="scss" scoped>
-
-
-
-</style>

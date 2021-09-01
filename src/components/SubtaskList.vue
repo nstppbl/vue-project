@@ -1,16 +1,11 @@
 <template>
-<div class="subtask">
-    <Subtask
-      v-for="subtask in subtasks"
-      :key="subtask.title"
-      :subtask_data="subtask"
-  />
-  <AddSubtask/>
-</div>
+  <div :class="$style.subtask">
+    <Subtask v-for="subtask in subtasks" :key="subtask.id" :subtask_data="subtask" />
+    <AddSubtask />
+  </div>
 </template>
 
 <script>
-
 import Subtask from './Subtask.vue'
 import AddSubtask from './AddSubtask.vue'
 
@@ -23,14 +18,14 @@ export default {
     return{
       subtasks: [
         {
+          id: 1,
           title: 'Subtask 1',
           isActive: true,
-          activeClass: 'todo-subtask--active'
         },
         {
+          id: 2,
           title: 'Subtask 2',
           isActive: true,
-          activeClass: 'todo-subtask--active'
         },
       ]
     }
@@ -38,9 +33,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-.todo-subtask {
+<style  module lang="scss">
+.todoSubtask {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,12 +48,10 @@ export default {
   border: 1px solid $base-color-light;
   border-top: 0;
   }
-
-.close-button {
+.closeButton {
   cursor: pointer;
 }
-
-.add-subtask {
+.addSubtask {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -74,20 +66,16 @@ export default {
   border: 1px solid $base-color-light;
   border-top: 0;
 }
-
-.add-subtask-input {
+.addSubtaskInput {
   width: 80%;
   margin-left: 10px;
   background-color: $base-color-pale;
   color: $text-color-dark;
 }
-
-.add-button {
+.addButton {
   cursor: pointer;
 }
-
-.add-subtask-input::placeholder {
+.addSubtaskInput::placeholder {
   color: $text-color-light;
 }
-
 </style>
