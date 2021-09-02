@@ -9,16 +9,12 @@
       </label>
       <img :class="[$style.closeButton, $style.todoTaskCloseButton]" src="@/assets/icons/close-icon.svg" alt="close-icon">
     </div>
-    <SubtaskList />
   </div>
 </template>
 
 <script>
-import SubtaskList from './SubtaskList.vue'
-
 export default {
   components: {
-    SubtaskList,
   },
   props: {
     taskData: {

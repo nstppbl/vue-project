@@ -17,17 +17,17 @@ export default {
         {
           id: 1,
           title: "Task 1",
-          isActive: true,
+          isActive: false,
         },
         {
           id: 2,
           title: "Task 2",
-          isActive: true,
+          isActive: false,
         },
         {
           id: 3,
           title: "Task 3",
-          isActive: true,
+          isActive: false,
         }
       ]
     }

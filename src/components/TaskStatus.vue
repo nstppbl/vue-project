@@ -2,7 +2,7 @@
   <div :class="$style.taskStatus">
     <label :class="$style.statusContainer"> {{ taskStatusData.status }}
       <input type="radio" checked="checked" name="radio">
-        <span class="checkmarkRadio"></span>
+        <span class="checkmarkRadio checkmarkRadioActive"></span>
     </label>
   </div>
 </template>
@@ -24,6 +24,8 @@ export default {
 </script>
 
 <style  module lang="scss">
+@import "@/assets/styles/custom-radiobutton.scss";
+
 .taskStatus {
   display: flex;
   justify-content: center;
@@ -37,5 +39,7 @@ export default {
     margin: 15px 15px;
   }
 }
+
+
 
 </style>
