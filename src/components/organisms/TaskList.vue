@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Task from './Task.vue'
+import Task from '../molecules/Task.vue'
 
 export default {
   components: {
@@ -17,12 +17,12 @@ export default {
         {
           id: 1,
           title: "Task 1",
-          isActive: false,
+          isActive: true,
         },
         {
           id: 2,
           title: "Task 2",
-          isActive: false,
+          isActive: true,
         },
         {
           id: 3,

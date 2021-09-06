@@ -1,9 +1,9 @@
 <template>
   <div :class="$style.task">
-    <div :class="[$style.todoTask, taskData.isActive ? $style.todoTaskActive : '']">
+    <div :class="$style.todoTask">
       <label class="checkboxContainer">
         <span class="checkboxLabel">{{ taskData.title }}</span>
-        <input type="checkbox" checked="checked">
+        <input type="checkbox" :checked="taskData.isActive">
         <span class="checkmark"></span>
         <span class="checkmarkBorder"></span>
       </label>
@@ -49,41 +49,6 @@ export default {
 }
 .closeButton {
   cursor: pointer;
-}
-.todoSubtask {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: $width-2;
-  height: 50px;
-  background-color: $base-color-pale;
-  color: $text-color-dark;
-  margin: 0px auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid $base-color-light;
-  border-top: 0;
-  }
-.addSubtask {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: $width-2;
-  height: 50px;
-  background-color: $base-color-pale;
-  color: $text-color-dark;
-  margin: 0px auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 0 0 10px 10px;
-  border: 1px solid $base-color-light;
-  border-top: 0;
-}
-.addSubtaskInput {
-  width: 80%;
-  margin-left: 10px;
-  background-color: $base-color-pale;
-  color: $text-color-dark;
 }
 .addButton {
   cursor: pointer;

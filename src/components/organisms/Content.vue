@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import TaskList from './TaskList.vue'
-import AddTask from './AddTask.vue'
+import TaskList from '../organisms/TaskList.vue'
+import AddTask from '../atoms/AddTask.vue'
 
 export default {
   components: {

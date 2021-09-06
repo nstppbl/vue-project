@@ -1,3 +1,26 @@
+<template>
+  <div :class="$style.taskStatus">
+    <label :class="$style.statusContainer"> {{ taskStatusData.status }}
+      <input type="radio" checked="checked" name="radio">
+        <span :class="$style.taskStatusData.class"></span> <!-- здесь должен динамически меняться класс, но он не подтягивается из родителя -->
+    </label>
+  </div>
+</template>
+
+<script>
+
+export default {
+  props: {
+    taskStatusData: {
+      default () {
+        return {}
+      }
+    }
+  }
+}
+</script>
+
+<style module lang="scss">
 /* The container */
 .statusContainer {
   display: block;
@@ -62,3 +85,17 @@
     left: 21px;
   }
 }
+.taskStatus {
+  display: flex;
+  justify-content: center;
+  }
+@media (max-width: 400px) {
+  .taskStatus {
+    display: block;
+    text-align: center;
+  }
+  .statusContainer {
+    margin: 15px 15px;
+  }
+}
+</style>

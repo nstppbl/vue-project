@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import './assets/styles/styles.scss'
-import Header from './components/Header.vue'
-import Content from './components/Content.vue'
-import Footer from './components/Footer.vue'
+import Header from './components/organisms/Header.vue'
+import Content from './components/organisms/Content.vue'
+import Footer from './components/organisms/Footer.vue'
 
 Vue.config.productionTip = false
 

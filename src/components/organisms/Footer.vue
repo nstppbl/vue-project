@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import TaskQty from './TaskQty.vue'
-import TaskStatus from './TaskStatus.vue'
+import TaskQty from '../atoms/TaskQty.vue'
+import TaskStatus from '../molecules/TaskStatus.vue'
 
 export default {
   components: {

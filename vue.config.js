@@ -4,6 +4,7 @@ module.exports = {
             sass: {
                 prependData: `
                 @import "@/assets/styles/styles.scss";
+                @import "@/assets/styles/custom-radiobutton.scss";
                 `
             }
         }
