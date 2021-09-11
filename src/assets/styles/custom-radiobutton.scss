@@ -1,92 +1,67 @@
 /* The container */
-.status-container {
+.statusContainer {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 1.8rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
 /* Hide the browser's default radio button */
-.status-container input {
+.statusContainer input {
   position: absolute;
   opacity: 0;
 }
-
-// /* Create a custom radio button */
-// .checkmark-radio {
-//   position: absolute;
-//   top: -9px;
-//   left: 19px;
-//   width: 50px;
-//   height: 30px;
-//   border-radius: 10px;
-// }
-
-// /* When the radio button is checked, add a border*/
-// .container input:checked ~ .checkmark-radio {
-// 	border: 1.5px solid;
-// }
-
-.checkmark-radio-all {
+.checkmarkRadioAll {
   position: absolute;
-  top: -9px;
-  left: 19px;
+  top: -0.5rem;
+  left: 0.9rem;
   width: 50px;
-  height: 30px;
+  height: 1.87rem;
   border-radius: 10px;
 }
-
-
-
-.status-container input:checked~.checkmark-radio-all {
-  border: 1.5px solid;
+.statusContainer input:checked~.checkmarkRadioAll {
+  border: 1px solid;
 }
-
-.checkmark-radio-active {
+.checkmarkRadioActive {
   position: absolute;
-  top: -9px;
-  left: 19px;
-  width: 72px;
-  height: 30px;
+  top: -0.5rem;
+  left: 1.18rem;
+  width: 4.4rem;
+  height: 1.87rem;
   border-radius: 10px;
 }
-
-.status-container input:checked~.checkmark-radio-active {
-  border: 1.5px solid;
+.statusContainer input:checked~.checkmarkRadioActive {
+  border: 1px solid;
 }
-
-.checkmark-radio-completed {
+.checkmarkRadioCompleted {
   position: absolute;
-  top: -9px;
-  left: 19px;
-  width: 105px;
-  height: 30px;
+  top: -0.5rem;
+  left: 1.13rem;
+  width: 7rem;
+  height: 1.87rem;
   border-radius: 10px;
 }
-
-.status-container input:checked~.checkmark-radio-completed {
-  border: 1.5px solid;
+.statusContainer input:checked~.checkmarkRadioCompleted {
+  border: 1px solid;
 }
-
-.checkmark-radio-all:hover,
-.checkmark-radio-active:hover,
-.checkmark-radio-completed:hover {
+.checkmarkRadioAll:hover,
+.checkmarkRadioActive:hover,
+.checkmarkRadioCompleted:hover {
   cursor: pointer;
 }
-
 @media (max-width: 400px) {
-  .checkmark-radio-all {
-    left: 46px;
+  .checkmarkRadioAll {
+    left: 3rem;
   }
-
-  .checkmark-radio-active {
-    left: 38px;
+  .checkmarkRadioActive {
+    left: 2.4rem;
   }
-
-  .checkmark-radio-completed {
-    left: 21px;
+  .checkmarkRadioCompleted {
+    left: 1.2rem;
+  }
+  .statusContainer {
+    margin: 15px 15px;
   }
 }
