@@ -21,9 +21,9 @@ export default {
 .content {
   width: $width-1;
   max-width: 540px;
-  background-color: #FFF4E9;
+  background-color: $content-background-color;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 0.5rem;
   text-align: center;
   color: $text-color-dark;
 }

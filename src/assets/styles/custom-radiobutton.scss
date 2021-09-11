@@ -2,7 +2,7 @@
 .statusContainer {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 1.8rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -15,36 +15,36 @@
 }
 .checkmarkRadioAll {
   position: absolute;
-  top: -9px;
-  left: 19px;
+  top: -0.5rem;
+  left: 0.9rem;
   width: 50px;
-  height: 30px;
+  height: 1.87rem;
   border-radius: 10px;
 }
 .statusContainer input:checked~.checkmarkRadioAll {
-  border: 1.5px solid;
+  border: 1px solid;
 }
 .checkmarkRadioActive {
   position: absolute;
-  top: -9px;
-  left: 19px;
-  width: 72px;
-  height: 30px;
+  top: -0.5rem;
+  left: 1.18rem;
+  width: 4.4rem;
+  height: 1.87rem;
   border-radius: 10px;
 }
 .statusContainer input:checked~.checkmarkRadioActive {
-  border: 1.5px solid;
+  border: 1px solid;
 }
 .checkmarkRadioCompleted {
   position: absolute;
-  top: -9px;
-  left: 19px;
-  width: 108px;
-  height: 30px;
+  top: -0.5rem;
+  left: 1.13rem;
+  width: 7rem;
+  height: 1.87rem;
   border-radius: 10px;
 }
 .statusContainer input:checked~.checkmarkRadioCompleted {
-  border: 1.5px solid;
+  border: 1px solid;
 }
 .checkmarkRadioAll:hover,
 .checkmarkRadioActive:hover,
@@ -53,12 +53,15 @@
 }
 @media (max-width: 400px) {
   .checkmarkRadioAll {
-    left: 49px;
+    left: 3rem;
   }
   .checkmarkRadioActive {
-    left: 38px;
+    left: 2.4rem;
   }
   .checkmarkRadioCompleted {
-    left: 21px;
+    left: 1.2rem;
+  }
+  .statusContainer {
+    margin: 15px 15px;
   }
 }

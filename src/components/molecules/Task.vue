@@ -7,7 +7,7 @@
         <span class="checkmark"></span>
         <span class="checkmarkBorder"></span>
       </label>
-      <img :class="[$style.closeButton, $style.todoTaskCloseButton]" src="@/assets/icons/close-icon.svg" alt="close-icon">
+      <img :class="$style.closeButton" src="@/assets/icons/close-icon.svg" alt="close-icon">
     </div>
   </div>
 </template>
@@ -35,22 +35,17 @@ export default {
   justify-content: space-between;
   align-items: center;
   width: $width-2;
-  height: 50px;
+  height: 3.1rem;
   background-color: $base-color-light;
   color: $text-color-dark;
-  margin: 0px auto;
-  margin-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 1.87rem auto 0;
+  padding: 0 1.25rem;
   border-radius: 10px;
 }
 .todoTaskActive {
   border-radius: 10px 10px 0 0;
 }
 .closeButton {
-  cursor: pointer;
-}
-.addButton {
   cursor: pointer;
 }
 </style>

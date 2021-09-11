@@ -1,15 +1,15 @@
 <template>
-  <div :class="$style.todoHeader">
+  <div :class="$style.title">
     to-do list
   </div>
 </template>
 
 <style  module lang="scss">
-.todoHeader {
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 3.1rem;
   background-color: $base-color-dark;
   color: $text-color-dark;
 }

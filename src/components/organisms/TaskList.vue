@@ -22,7 +22,7 @@ export default {
         {
           id: 2,
           title: "Task 2",
-          isActive: true,
+          isActive: false,
         },
         {
           id: 3,

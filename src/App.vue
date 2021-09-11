@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Header from './components/organisms/Header.vue'
-import Content from './components/organisms/Content.vue'
-import Footer from './components/organisms/Footer.vue'
+import Header from '@/components/organisms/Header.vue'
+import Content from '@/components/organisms/Content.vue'
+import Footer from '@/components/organisms/Footer.vue'
 
 export default {
   components: {
@@ -32,9 +32,9 @@ body {
 #app {
   overflow: auto;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   #app {
-    width: $width-2;
+    width: $width-3;
   }
 }
 </style>

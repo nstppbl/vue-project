@@ -1,19 +1,19 @@
 <template>
-  <div :class="$style.todoFooter">
-    <TaskQty/>
-    <div :class="$style.taskStatusWrap">
-      <TaskStatus v-for="status in statuses" :key="status.id" :taskStatusData="status" />
+  <div :class="$style.footer">
+  <div>
+    <div class="taskQty">1/3 left</div>
+  </div>
+    <div :class="$style.statusWrap">
+      <TaskStatus v-for="status in statuses" :key="status.id" :statusData="status"/>
     </div>
   </div>
 </template>
 
 <script>
-import TaskQty from '../atoms/TaskQty.vue'
 import TaskStatus from '../molecules/TaskStatus.vue'
 
 export default {
   components: {
-    TaskQty,
     TaskStatus,
   },
    data() {
@@ -23,16 +23,19 @@ export default {
         id: 1,
         status: "All",
         class: "checkmarkRadioAll",
+        isChecked: true,
         },
         {
         id: 2,
         status: "Active",
         class: "checkmarkRadioActive",
+        isChecked: false,
         },
         {
         id: 3,
         status: "Completed",
         class: "checkmarkRadioCompleted",
+        isChecked: false,
         }
       ]
     }
@@ -41,27 +44,24 @@ export default {
 </script>
 
 <style  module lang="scss">
-.todoFooter {
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+  height: 3.1rem;
+  padding-left: 1.87rem;
+  padding-right: 1.87rem;
   background-color: $base-color-dark;
   color: $text-color-light;
 }
-.taskStatusWrap {
+.statusWrap {
   display: flex;
 }
 @media (max-width: 400px) {
-  .todoFooter {
-    height: 120px;
+  .footer {
+    height: 11.25rem;
   }
-  .addSubtaskInput {
-    letter-spacing: -.5px;
-  }
-  .taskStatusWrap {
+  .statusWrap {
     display: block;
     justify-content: center;
   } 
